@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+ }
+.stcky
+    { 
+        display: inline-flex;
+    position:-webkit-fixed;
+    top: 0px;
+   
+    padding: 16px;
+    width: 100%;
+    background-color:darkgrey;
+   
+    }
+    .header
+        {
+            flex-basis:100%;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+    .ulMenu
+{
+display: inline;
+border-style: none;
+list-style-type: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+flex-direction: row;
+margin: 5px 55px 5px 75px;
+position: relative;
+left: 40%;
+color: white;
+}
+.stckyx
+{
+    display: inline-flex;
+    position: absolute;
+    left: 250px;
+    top: 10px;
+    
+}
+.stckyz
+{   
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    top: 30px;
+}
+    a
+    {
+    
+     text-decoration: none;
+     color:#ffff;
+    }
+
+    a:hover
+    {
+    color:blue;
+    }
+    a:active
+    {
+    color:yellow;
+    }
+    
+
+    #container
+{
+background:linear-gradient(360deg,rgba(0,0,0,0.30)100%,rgba(0,0,0,0.20)90%), url('https://images.unsplash.com/photo-1495865870076-53f4c607d692?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+
+
+    .speedx
+{
+display: inline;
+font-weight:bolder;
+font-style: oblique;
+text-decoration:line-through;
+text-decoration-thickness: 7%;
+text-decoration-color:#0000009f;
+text-shadow: -10px 10px 5px #000000;
+font-family: 'Courier New', Courier, monospace;
+text-transform: uppercase;
+color: rgba(209, 12, 12, 1);
+font-size: 40px;
+position: absolute;
+padding-top: 5%;
+margin-bottom: 0%;
+-webkit-text-stroke-width: 2px;
+-webkit-text-fill-color: black; 
+}
+
+
+.mini
+{
+display: inline-flex;
+font-weight: bolder;
+font-style:oblique;
+text-shadow: -10px 10px 5px #000000;
+font-family:'Courier New', Courier, monospace;
+text-transform: uppercase;
+color: rgba(252, 249, 249, 0.747);
+font-size: 20px;
+position:absolute;
+padding-top:7%;
+padding-left:5%;
+-webkit-text-stroke-width: 2px;
+-webkit-text-fill-color: white;
+
+}
+
+
+ .navigation
+     {
+            display: inline;
+           flex-basis: 20%;
+            flex-grow: 0;
+            flex-shrink: 1;
+        
+        color:blanchedalmond;
+        font-weight: 200;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         padding-left: 10px;
+         font-size: 40px;
+         -webkit-text-stroke-width: 2px;
+        -webkit-text-fill-color: black;
+            
+        }
+        .content
+        {
+            flex-basis: 70%;
+            flex-grow: 1;
+            flex-shrink:0;
+           
+      
+        }
+        .brdr
+        {
+            border-bottom: 2px solid gray;
+        }
+
+
+        .welcome
+        {
+            display: block;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            
+        }
+
+        .prio
+        {
+            display: block;
+            text-align: center;
+            color: gray;
+        }
+
+        .whitecar
+        {
+            display: inline;
+        }
+
+        .ani
+        {
+        position:relative;
+        top:0;
+        left:0;
+        animation-name: slideMe;
+        animation-duration: 2s;
+        animation-fill-mode: forwards; 
+    }
+
+    @keyframes slideMe{
+     from 
+     {  
+        top:0px;
+        left:0;
+     }
+     to 
+     {  
+        left:600px;
+        
+     }
+    }
+
+    .customize
+    {
+
+    display: flex;
+    color: #da0c0cee;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-weight:100;
+    font-size: 30px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: black;
+    
+    }
+
+    .ani2
+    {
+        position:relative;
+        top:0;
+        left:0;
+        animation-name: slideMe2;
+        animation-duration: 2s;
+        animation-fill-mode: forwards; 
+    }
+    @keyframes slideMe2{
+     from 
+     {  
+        top:0px;
+        left:0;
+     }
+     to 
+     {  
+        left:650px;
+        
+     }
+    }
+
+    .ani3
+    {
+        position:relative;
+        top:0;
+        left:0;
+        animation-name: slideMe3;
+        animation-duration: 2s;
+        animation-fill-mode: forwards; 
+    }
+    @keyframes slideMe3
+    {
+        from
+        {
+            top:0;
+            left:0;
+        }
+        to 
+        {
+            left: 1465px;
+        }
+    }
+
+    .polaroid {
+    width: 60%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    max-width: 30%;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    margin-left: 25px;
+    
+    }
+
+    .caption {
+    text-align: center;
+    padding: 10px 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+
+    #grid2
+        {
+            display: grid;
+            background-color:gray;
+        
+        }
+        .foot
+        {
+            
+        grid-column-start: auto;
+        grid-column-end:auto;
+        display: inline;
+    
+        }
+        
+        
+        .mail
+        {
+            padding-left: 25px;
+            font-style: italic;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 16px;
+            color:gainsboro;
+        }
+        
+        .gr
+        {
+            text-align: center;
+           
+        }
+        .gr2
+        {
+            display:block;
+            text-align: right;
+
+        }
